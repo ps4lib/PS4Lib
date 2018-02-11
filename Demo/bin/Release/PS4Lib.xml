@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PS4Lib</name>
+    </assembly>
+    <members>
+        <member name="M:PS4Lib.Extension.ReadSByte(System.UInt64)">
+            <summary>Read a signed byte.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadBool(System.UInt64)">
+            <summary>Read a byte a check if his value. This return a bool according the byte detected.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadInt16(System.UInt64)">
+            <summary>Read and return an integer 16 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadInt32(System.UInt64)">
+            <summary>Read and return an integer 32 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadInt64(System.UInt64)">
+            <summary>Read and return an integer 64 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadByte(System.UInt64)">
+            <summary>Read and return a byte.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadBytes(System.UInt64,System.Int32)">
+            <summary>Read a string with a length to the first byte equal to an value null (0x00).</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadUInt16(System.UInt64)">
+            <summary>Read and return an unsigned integer 16 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadUInt32(System.UInt64)">
+            <summary>Read and return an unsigned integer 32 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadUInt64(System.UInt64)">
+            <summary>Read and return an unsigned integer 64 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadFloat(System.UInt64)">
+            <summary>Read and return a Float.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadFloats(System.UInt64,System.Int32)">
+            <summary>Read and return an array of Floats.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadDouble(System.UInt64)">
+            <summary>Read and return a Double.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.ReadString(System.UInt64)">
+            <summary>Read a string very fast by buffer and stop only when a byte null is detected (0x00).</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteSByte(System.UInt64,System.SByte)">
+            <summary>Write a signed byte.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteBool(System.UInt64,System.Boolean)">
+            <summary>Write a boolean.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteInt16(System.UInt64,System.Int16)">
+            <summary>Write an interger 16 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteInt32(System.UInt64,System.Int32)">
+            <summary>Write an integer 32 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteInt64(System.UInt64,System.Int64)">
+            <summary>Write an integer 64 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteByte(System.UInt64,System.Byte)">
+            <summary>Write a byte.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteBytes(System.UInt64,System.Byte[])">
+            <summary>Write a byte array.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteString(System.UInt64,System.String)">
+            <summary>Write a string.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteUInt16(System.UInt64,System.UInt16)">
+            <summary>Write an unsigned integer 16 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteUInt32(System.UInt64,System.UInt32)">
+            <summary>Write an unsigned integer 32 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteUInt64(System.UInt64,System.UInt64)">
+            <summary>Write an unsigned integer 64 bits.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteFloat(System.UInt64,System.Single)">
+            <summary>Write a Float.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteFloats(System.UInt64,System.Single[])">
+            <summary>Write an array of Floats.</summary>
+        </member>
+        <member name="M:PS4Lib.Extension.WriteDouble(System.UInt64,System.Double)">
+            <summary>Write a double.</summary>
+        </member>
+        <member name="T:PS4Lib.PS4API">
+            <summary>
+            Represent the PS4API functions 
+            </summary>
+        </member>
+        <member name="P:PS4Lib.PS4API.Extension">
+            <summary>
+            Extension methods for more bytes operation
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.ConnectTarget(System.String)">
+            <summary>
+            Connect to PS4 on your LAN
+            </summary>
+            <param name="ip">PS4 ip address</param>
+            <returns></returns>
+        </member>
+        <member name="P:PS4Lib.PS4API.IsConnected">
+            <summary>
+            Check whether your PS4 is connected
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.DisconnectTarget">
+            <summary>
+            Disconnect from PS4
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.AttachProcess">
+            <summary>
+            Attach to current game process
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.DetachProcess">
+            <summary>
+            Detach the current game process
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.Continue">
+            <summary>
+            Continue the current game process
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.Suspend">
+            <summary>
+            Suspend the current process
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.Resume">
+            <summary>
+            Resume the current process
+            </summary>
+        </member>
+        <member name="M:PS4Lib.PS4API.GetMemory(System.UInt64,System.Byte[]@)">
+            <summary>
+            Get memory from the attached process
+            </summary>
+            <param name="address">64Bits address</param>
+            <param name="buffer">place to hold output buffer</param>
+        </member>
+        <member name="M:PS4Lib.PS4API.GetBytes(System.UInt64,System.Int32)">
+            <summary>
+            Get bytes from the attached process
+            </summary>
+            <param name="address">64Bits address</param>
+            <param name="length">length of bytes to read</param>
+        </member>
+        <member name="M:PS4Lib.PS4API.SetMemory(System.UInt64,System.Byte[],System.Int32)">
+            <summary>
+            Set memory into attached process
+            </summary>
+            <param name="address">64Bits address</param>
+            <param name="buffer">input data</param>
+            <param name="length">length to write</param>
+        </member>
+        <member name="M:PS4Lib.PS4API.SetMemory(System.UInt32,System.Byte[])">
+            <summary>
+            Set memory into attached process
+            </summary>
+            <param name="address">64Bits address</param>
+            <param name="buffer">input data</param>
+        </member>
+        <member name="M:PS4Lib.PS4API.Notify(System.Int32,System.String)">
+            <summary>
+            Show notification with text
+            </summary>
+        </member>
+    </members>
+</doc>
