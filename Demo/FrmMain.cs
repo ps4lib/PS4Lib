@@ -39,7 +39,7 @@ namespace Demo
         {
 
             if (!ps4.AttachProcess())
-                MessageBox.Show("Attach field!");
+                MessageBox.Show("Attach failed!");
             else MessageBox.Show("Attached..");
         }
       
