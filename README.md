@@ -1,8 +1,10 @@
 # PS4Lib
 dynamic link library to create RTMs for PS4
 
+## Usage
+You need [PS4API.bin](https://github.com/BISOON/ps4-api-server/releases/download/1.0/PS4API.bin) server payload in order to use this library.
 
-# A Brief Examples:
+## A Brief Examples:
 
 Instantiate the PS4API object:
 ```C#
